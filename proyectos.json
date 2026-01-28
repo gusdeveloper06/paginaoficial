@@ -7,13 +7,6 @@
         "link": "https://github.com/tu-usuario/app-videos"
     },
     {
-        "id": 2,
-        "titulo": "/cancelar",
-        "descripcion": "/cancelar",
-        "detalles": "/cancelar",
-        "link": "/cancelar"
-    },
-    {
         "id": 3,
         "titulo": "/cancelar",
         "descripcion": "/cancelar",
