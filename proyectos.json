@@ -5,15 +5,5 @@
         "descripcion": "Una aplicación desarrollada en Python para procesar clips de video de forma masiva.",
         "detalles": "Aquí van los datos técnicos, lenguajes usados y enlaces de descarga.",
         "link": "https://github.com/tu-usuario/app-videos"
-    },
-    {
-        "id": 2,
-        "titulo": "AUTODARK (BETA)",
-        "descripcion": "AutDark es un avanzado motor de respuestas automáticas para Android que fusiona la potencia de la arquitectura JVM con una estética Cyberpunk Deep Dark. Diseñado para usuarios que exigen automatización sin fricciones y una interfaz de alto impacto visual.",
-        "detalles": "**Kotlin Core: Lógica principal, manejo de servicios y flujos asíncronos.\n**Java Legacy Support: Estructuras de datos robustas y compatibilidad de servicios del sistema.\n**Python Integration: Utilizado en el prototipado rápido de algoritmos de respuesta y scripts de soporte técnico.\n**Material Design 3: Personalización profunda de componentes para una experiencia \"Premium Dark\".",
-        "miniatura": "https://raw.githubusercontent.com/gusitodev06/autoresponderappfree/main/SCREENSHOTS/Screenshot_20260115-004346.jpg",
-        "captura": "https://raw.githubusercontent.com/gusitodev06/autoresponderappfree/main/SCREENSHOTS/Screenshot_20260115-004346.jpg",
-        "download": "https://github.com/gusitodev06/autoresponderappfree/releases/download/BETA/AUTDARK.ULTIMATE.V1.0.BETA.apk",
-        "link": "https://github.com/gusitodev06/autoresponderappfree"
     }
 ]
