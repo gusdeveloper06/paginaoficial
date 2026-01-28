@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mis Proyectos</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f4; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 15px; border-radius: 8px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .card:hover { transform: translateY(-5px); transition: 0.3s; }
+        
+        /* Estilo del Modal (Ventana de detalles) */
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); }
+        .modal-content { background: white; margin: 10% auto; padding: 30px; width: 50%; border-radius: 10px; position: relative; }
+        .close { position: absolute; top: 10px; right: 20px; font-size: 24px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Portafolio de Proyectos</h1>
+    <div id="contenedor-proyectos" class="grid">
+        </div>
+
+    <div id="miModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-descripcion"></p>
+            <hr>
+            <p id="modal-detalles"></p>
+            <a id="modal-link" href="#" target="_blank">Ver en GitHub</a>
+        </div>
+    </div>
+
+    <script>
+        // Función para cargar los proyectos desde el JSON
+        async function cargarProyectos() {
+            const respuesta = await fetch('proyectos.json');
+            const proyectos = await respuesta.json();
+            const contenedor = document.getElementById('contenedor-proyectos');
+
+            proyectos.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.innerHTML = `<h3>${p.titulo}</h3><p>${p.descripcion.substring(0, 50)}...</p>`;
+                card.onclick = () => abrirModal(p);
+                contenedor.appendChild(card);
+            });
+        }
+
+        function abrirModal(p) {
+            document.getElementById('modal-titulo').innerText = p.titulo;
+            document.getElementById('modal-descripcion').innerText = p.descripcion;
+            document.getElementById('modal-detalles').innerText = p.detalles;
+            document.getElementById('modal-link').href = p.link;
+            document.getElementById('miModal').style.display = "block";
+        }
+
+        function cerrarModal() {
+            document.getElementById('miModal').style.display = "none";
+        }
+
+        cargarProyectos();
+    </script>
+</body>
+</html>
