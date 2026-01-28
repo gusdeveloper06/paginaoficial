@@ -1,9 +1,16 @@
 [
-  {
-    "id": 1,
-    "titulo": "App para Videos",
-    "descripcion": "Una aplicación desarrollada en Python para procesar clips de video de forma masiva.",
-    "detalles": "Aquí van los datos técnicos, lenguajes usados y enlaces de descarga.",
-    "link": "https://github.com/tu-usuario/app-videos"
-  }
+    {
+        "id": 1,
+        "titulo": "App para Videos",
+        "descripcion": "Una aplicación desarrollada en Python para procesar clips de video de forma masiva.",
+        "detalles": "Aquí van los datos técnicos, lenguajes usados y enlaces de descarga.",
+        "link": "https://github.com/tu-usuario/app-videos"
+    },
+    {
+        "id": 2,
+        "titulo": "/cancelar",
+        "descripcion": "/cancelar",
+        "detalles": "/cancelar",
+        "link": "/cancelar"
+    }
 ]
